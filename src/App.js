@@ -5,15 +5,23 @@ import Nosotros from "./components/Nosotros/Nosotros";
 import Galeria from "./components/Galeria/Galeria";
 import PreciosMenu from "./components/PreciosMenu/PreciosMenu";
 import Publicidad from "./components/Publicidad/Publicidad";
+import Carrucel from "./components/carrucel/Carrucel";
+import Suscribete from "./components/suscribete/Suscribete";
 
 function App() {
   return (
     <div>
       <Hero />
-      <Nosotros />
+      <div className="sm:hidden ">
+        <Nosotros />
+      </div>
       <Galeria />
       <PreciosMenu />
       <Publicidad />
+      <div className="sm:block hidden">
+        <Carrucel />
+      </div>
+      <Suscribete />
     </div>
   );
 }
