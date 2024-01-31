@@ -20,7 +20,13 @@ const Hero = () => {
       <div className="flex justify-center items-center gap-10">
         <div className="flex justify-center items-center">
           <div className="hover:shadow-xl hover:transition coso ">
-            <img src={foto1} width={300} height={300} alt="jijija" />
+            <img
+              src={foto1}
+              width={300}
+              height={300}
+              alt="jijija"
+              className="px-4"
+            />
             <div className="flex justify-center items-center">
               <p className="text-xl">Chicken Burger</p>
             </div>
@@ -31,7 +37,13 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <div className="hover:shadow-xl hover:transition coso">
-            <img src={foto2} width={300} height={300} alt="jijija" />
+            <img
+              src={foto2}
+              width={300}
+              height={300}
+              alt="jijija"
+              className="px-4"
+            />
             <div className="flex justify-center items-center">
               <p className="text-xl">Black Burger</p>
             </div>
@@ -42,7 +54,13 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <div className="hover:shadow-xl hover:transition coso">
-            <img src={foto3} width={300} height={300} alt="jijija" />
+            <img
+              src={foto3}
+              width={300}
+              height={300}
+              alt="jijija"
+              className="px-4"
+            />
             <div className="flex justify-center items-center">
               <p className="text-xl">Fish Burger</p>
             </div>
@@ -53,7 +71,13 @@ const Hero = () => {
         </div>
         <div className="flex justify-center items-center">
           <div className="hover:shadow-xl hover:transition coso">
-            <img src={foto4} width={300} height={300} alt="jijija" />
+            <img
+              src={foto4}
+              width={300}
+              height={300}
+              alt="jijija"
+              className="px-4"
+            />
             <div className="flex justify-center items-center">
               <p className="text-xl">Double Burger</p>
             </div>

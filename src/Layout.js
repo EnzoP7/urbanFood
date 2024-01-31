@@ -1,6 +1,7 @@
 // Layout.js
 import React from "react";
 import ElHeader from "./components/ElHeader";
+import ElFooter from "./components/footer/ElFooter";
 
 const Layout = ({ children }) => {
   return (
@@ -10,7 +11,7 @@ const Layout = ({ children }) => {
       </header>
       <main>{children}</main>
       <footer>
-        <p>© 2024 Mi Sitio Web</p>
+        <ElFooter />
       </footer>
     </div>
   );

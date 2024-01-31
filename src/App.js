@@ -1,13 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Hero from "./components/hero/Hero";
+import Nosotros from "./components/Nosotros/Nosotros";
+import Galeria from "./components/Galeria/Galeria";
 
 function App() {
   return (
     <div>
-      {" "}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <Hero />
+      <Nosotros />
+      <Galeria />
     </div>
   );
 }

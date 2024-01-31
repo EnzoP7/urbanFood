@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Layout from "./Layout";
+import ElFooter from "./components/footer/ElFooter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
