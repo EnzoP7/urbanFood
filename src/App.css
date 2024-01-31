@@ -2,14 +2,14 @@
     color:rgb(248, 165, 11);
 }
 
-#menu-header li span{
+.menu-header li span{
     font-size: 2rem;
     display:inline-block;
     width: auto;
     position:relative;
 }
 
-#menu-header li a:after{
+.menu-header li a:after{
     content: '';
     position: absolute;
     width:100%;
@@ -23,7 +23,7 @@
     transition: transform 0.6s ease-out;
 }
 
-#menu-header li a:hover:after{
+.menu-header li a:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -39,4 +39,3 @@
 .paddingdecoso{
     padding-bottom: 30rem;
 }
-
