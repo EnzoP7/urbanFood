@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         amarillo: "#fcbc34 ",
+        rojoanaranjado: "#ea3c0c ",
       },
     },
   },

@@ -48,7 +48,7 @@ const Hero = () => {
         ))}
       </div>
       <div className="flex justify-center items-center mt-4 pb-4">
-        <div className="flex flex-row text-white bg-orange-600 px-8 cursor-pointer hover:bg-orange-800">
+        <div className="flex flex-row text-white bg-rojoanaranjado px-8 cursor-pointer hover:bg-orange-800">
           <h1 className="font-bold text-2xl pt-4 pb-4">Ver Menu</h1>
           <FaArrowRight size={30} className="mt-4 ml-3" />{" "}
         </div>

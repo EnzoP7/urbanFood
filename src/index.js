@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import Layout from "./Layout";
 import ElFooter from "./components/footer/ElFooter";
+import Inicio from "./pages/inicio";
+import ProductPage from "./pages/ProductPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +18,8 @@ root.render(
         href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Teko:wght@300&display=swap"
         rel="stylesheet"
       />
-      <App />
+      {/* <Inicio /> */}
+      <ProductPage />
     </Layout>
   </React.StrictMode>
 );
