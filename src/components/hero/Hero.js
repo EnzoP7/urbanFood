@@ -4,6 +4,7 @@ import foto2 from "../../assests/heroburgers/product2.png";
 import foto4 from "../../assests/heroburgers/product4.png";
 import foto3 from "../../assests/heroburgers/product3.png";
 import { FaArrowRight } from "react-icons/fa6";
+import Cajita from "../cajita/Cajita";
 
 const Hero = () => {
   const burgers = [
@@ -29,7 +30,7 @@ const Hero = () => {
       <div className="flex justify-center flex-col sm:flex-row items-center gap-10">
         {burgers.map((burger) => (
           <div key={burger.id} className="flex justify-center items-center">
-            <div className="hover:shadow-xl hover:transition coso">
+            <div className="hover:shadow-xl hover:transition coso relative group">
               <img
                 src={burger.foto}
                 width={300}
@@ -37,6 +38,7 @@ const Hero = () => {
                 alt="jijija"
                 className="px-4"
               />
+              <Cajita />
               <div className="flex justify-center items-center">
                 <p className="text-xl">{burger.nombre}</p>
               </div>

@@ -14,6 +14,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { useState } from "react";
 import { LuShoppingCart } from "react-icons/lu";
+import Cajita from "../components/cajita/Cajita";
 const ProductPage = () => {
   const [contador, setcontador] = useState(1);
   const images = [hamburgesa2, hamburgesa1, hamburgesa3, hamburgesa4];
@@ -31,9 +32,9 @@ const ProductPage = () => {
   };
 
   const prodcutosRelacionados = [
-    { title: "MArgarita", precio: 320, imagen: Producto1 },
-    { title: "Hot Dog Americano", precio: 120, imagen: producto2 },
-    { title: "Pancho Porteño", precio: 120, imagen: producto3 },
+    { id: 1, title: "MArgarita", precio: 320, imagen: Producto1 },
+    { id: 12, title: "Hot Dog Americano", precio: 120, imagen: producto2 },
+    { id: 13, title: "Pancho Porteño", precio: 120, imagen: producto3 },
   ];
 
   return (
@@ -221,7 +222,11 @@ const ProductPage = () => {
 
               {prodcutosRelacionados.map((producto) => (
                 <>
-                  <div className="flex items-center justify-center cursor-pointer">
+                  <div
+                    key={producto.id}
+                    className="flex items-center justify-center cursor-pointer"
+                  >
+                    <Cajita />
                     <img src={producto.imagen} alt="producto" />
                   </div>
                   <h3 className="text-3xl text-center cursor-pointer hover:text-rojoanaranjado">
