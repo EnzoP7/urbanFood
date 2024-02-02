@@ -7,7 +7,7 @@ import foto5 from "../../assests/imagenes/img-11-copyright-890x664.jpg";
 
 const Galeria = () => {
   return (
-    <div className="flex mt-40 flex-col sm:flex-row">
+    <div className="flex  flex-col sm:flex-row">
       {/* Columna 1 - Una foto completa */}
       {/* <div className=" tamaño">
         <img src={foto1} alt="Single Photo" className="w-full  object-cover" />

@@ -6,7 +6,7 @@ const Suscribete = () => {
     <div className="bg-amarillo py-20">
       <div className="flex sm:flex-row flex-col justify-center items-center gap-10 sm:gap-44 py-1">
         <div>
-          <h1 className="text-3xl sm:text-6xl font-bold text-center sm:mb-8">
+          <h1 className="text-3xl sm:text-6xl lg:text-5xl xl:text-6xl font-bold text-center sm:mb-8">
             SUBSCRIBE FOR EXCLUSIVE <br />
             UPDATES AND HOT OFFERS!
           </h1>

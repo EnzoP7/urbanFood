@@ -12,15 +12,15 @@ import Portada from "./components/Portada/Portada";
 function App() {
   return (
     <div>
-      {/* <Portada /> */}
+      <Portada />
       <Hero />
       <div className="sm:hidden ">
         <Nosotros />
       </div>
-      <Galeria />
+
       <PreciosMenu />
       <Publicidad />
-
+      <Galeria />
       <Suscribete />
     </div>
   );

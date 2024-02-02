@@ -5,7 +5,7 @@ const PreciosMenu = () => {
   const hamburguesas = [
     {
       id: 1,
-      title: "SOUTHWEST CHICKEN BURGER",
+      title: "CHICKEN BURGER",
       ingredientes:
         "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
       precio: 10,
@@ -48,7 +48,7 @@ const PreciosMenu = () => {
 
   return (
     <div
-      className="paddingdecoso "
+      className="paddingdecoso text-center"
       style={{ backgroundImage: `url(${fondo})`, backgroundSize: "cover" }}
     >
       <div className="flex justify-center items-center pt-10 mb-5 text-white">
@@ -66,13 +66,10 @@ const PreciosMenu = () => {
             {hamburguesas.map((hamburguesa) => (
               <div key={hamburguesa.id}>
                 <div className="mb-10">
-                  <h3 className="sm:text-4xl text-2xl">
+                  <h3 className="sm:text-4xl lg:text-4xl xl:text-5xl text-2xl">
                     {hamburguesa.title}
-                    <span className="text-gray-400">
-                      {" "}
-                      .........................{" "}
-                    </span>
-                    ${hamburguesa.precio.toFixed(2)}
+                    <span className="text-gray-400"> </span>$
+                    {hamburguesa.precio.toFixed(2)}
                   </h3>
                   <p className="text-gray-400 text-lg">
                     {hamburguesa.ingredientes}
@@ -106,13 +103,10 @@ const PreciosMenu = () => {
             {hamburguesas.map((hamburguesa) => (
               <div key={hamburguesa.id}>
                 <div className="mb-10">
-                  <h3 className="sm:text-4xl text-2xl">
+                  <h3 className="sm:text-4xl lg:text-4xl xl:text-5xl text-2xl">
                     {hamburguesa.title}
-                    <span className="text-gray-400">
-                      {" "}
-                      .........................{" "}
-                    </span>
-                    ${hamburguesa.precio.toFixed(2)}
+                    <span className="text-gray-400"> </span>$
+                    {hamburguesa.precio.toFixed(2)}
                   </h3>
                   <p className="text-gray-400 text-lg">
                     {hamburguesa.ingredientes}

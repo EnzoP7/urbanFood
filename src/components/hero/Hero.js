@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center mt-10">
         <div>
           <h5 className="text-lg">OUR BURGERS</h5>
         </div>
@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="flex justify-center flex-col sm:flex-row items-center gap-10">
         {burgers.map((burger) => (
           <div key={burger.id} className="flex justify-center items-center">
-            <div className="hover:shadow-xl hover:transition coso relative group">
+            <div className="hover:shadow-xl hover:transition coso relative group ">
               <img
                 src={burger.foto}
                 width={300}
@@ -50,7 +50,7 @@ const Hero = () => {
         ))}
       </div>
       <div className="flex justify-center items-center mt-4 pb-4">
-        <div className="flex flex-row text-white bg-rojoanaranjado px-8 cursor-pointer hover:bg-orange-800">
+        <div className="flex flex-row text-white bg-rojoanaranjado px-8 cursor-pointer hover:bg-rojoanaranjado/80">
           <h1 className="font-bold text-2xl pt-4 pb-4">Ver Menu</h1>
           <FaArrowRight size={30} className="mt-4 ml-3" />{" "}
         </div>
