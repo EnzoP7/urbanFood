@@ -40,6 +40,7 @@ const ProductPage = () => {
   return (
     <>
       <div className="bg-amarillo">
+        {/* //! MOBILE */}
         <div className="sm:hidden">
           <div className="flex items-center justify-center flex-col">
             <div>
@@ -104,7 +105,7 @@ const ProductPage = () => {
                 <div className="px-8">
                   <h2 className="text-2xl">{contador}</h2>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col gap-5">
                   <div>
                     <IoIosArrowUp size={20} onClick={AumentarContador} />
                   </div>
@@ -240,7 +241,147 @@ const ProductPage = () => {
             </div>
           </div>
         </div>
-        {/* <ProductSlideShow images={images} /> */}
+
+        {/* //! PC ESCRITORIO */}
+        <div className="hidden sm:block">
+          {/* <div className="flex items-center justify-center flex-col">
+            <div>
+              <h3 className="text-4xl pt-5">SHOP</h3>
+            </div>
+            <div>
+              <IoIosArrowDown size={20} />
+            </div>
+          </div> */}
+
+          <div className="grid grid-cols-2 grid-rows-2">
+            <div className="col-span-1 row-span-2">
+              <img
+                src={hamburgesa2}
+                className="w-[500px] xl:w-[800px]"
+                alt="wdwqad"
+              />
+            </div>
+
+            <div className="col-span-1 row-span-2 xl:mt-32 xl:pr-3">
+              <h3 className="pt-8 font-bold text-3xl">Black Burger</h3>
+              <div className="flex items-center justify-between gap-32 pr-3">
+                <div>
+                  <h3 className="text-3xl">
+                    <span className="text-slate-500 line-through">$320</span>
+                    <span className="text-rojoanaranjado"> $ 280</span>{" "}
+                  </h3>
+                </div>
+                <div className="">
+                  <div className="rating pt-1">
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      className="mask mask-star  bg-rojoanaranjado"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      className="mask mask-star bg-rojoanaranjado"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      className="mask mask-star  bg-rojoanaranjado"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      className="mask mask-star  bg-rojoanaranjado"
+                    />
+                    <input
+                      type="radio"
+                      name="rating-1"
+                      className="mask mask-star  bg-rojoanaranjado"
+                      checked
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* //! DESCRIPCION  */}
+              <p className="font-serif pt-5">
+                Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit
+                odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia
+                sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et
+                dolore.
+              </p>
+              <p className="font-serif ">
+                At vero accusam et justo duo dolores et ea rebum. Stet clitain
+                vidunt ut labore eirmod tempor invidunt magna aliquyam.
+              </p>
+              <div className="flex items-center justify-start pt-3 pb-10 gap-5 lg:mt-5">
+                <div className="flex justify-between items-center p-2 border-black border-[1px]">
+                  <div className="px-8">
+                    <h2 className="text-2xl">{contador}</h2>
+                  </div>
+                  <div className="flex flex-col gap-5 lg:gap-0 ">
+                    <div>
+                      <IoIosArrowUp size={20} onClick={AumentarContador} />
+                    </div>
+                    <div>
+                      <IoIosArrowDown size={20} onClick={decrementarContador} />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center text-white p-3 justify-center bg-rojoanaranjado hover:bg-rojoanaranjado/90">
+                  <LuShoppingCart size={30} />
+                  <h3 className="text-xl pl-6">Buy Now</h3>
+                </div>
+              </div>
+              {/* //! ETIQUETAS */}
+              <div>
+                <h3 className="">
+                  <span className="font-semibold ">Categoria: </span>
+                  Hamburgesas & Papitas
+                </h3>
+                <h3 className="">
+                  <span className="font-semibold">TAgs: </span>
+                  Oferta - Especial
+                </h3>
+                <h3 className="">
+                  <span className="font-semibold">Producto ID: </span>
+                  11234
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="pl-8">
+              <h3 className="text-5xl">Productos Relacionados</h3>
+            </div>
+
+            <div className="flex ">
+              {prodcutosRelacionados.map((producto) => (
+                <>
+                  <div
+                    key={producto.id}
+                    className="flex flex-col items-center justify-center cursor-pointer "
+                  >
+                    <div className="relative group">
+                      <Cajita />
+
+                      <img src={producto.imagen} alt="producto" />
+                    </div>
+
+                    <h3 className="text-3xl text-center cursor-pointer hover:text-rojoanaranjado">
+                      {producto.title}
+                    </h3>
+                    <h3 className="text-center mb-10 text-3xl">
+                      ${producto.precio}
+                    </h3>
+                  </div>
+                </>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

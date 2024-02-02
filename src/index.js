@@ -20,8 +20,8 @@ root.render(
         rel="stylesheet"
       />
       {/* <Prueba /> */}
-      <Inicio />
-      {/* <ProductPage /> */}
+      {/* <Inicio /> */}
+      <ProductPage />
     </Layout>
   </React.StrictMode>
 );
