@@ -2,6 +2,7 @@ import React from "react";
 import { BsBag } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
 import headerImage from "../assests/fondos/paraheader.png";
+// import { useNavigation } from "react-router-dom";
 
 const menuClick = (target) => {
   const listaUl = document.getElementsByClassName("menu-header");
@@ -30,6 +31,17 @@ const openMenu = () => {
 };
 
 const ElHeader = () => {
+  // const navigate = useNavigation();
+
+  // const irAMenu = () => {
+  //   navigate("/menu");
+  // };
+  // const irACarrito = () => {
+  //   navigate("/carrito");
+  // };
+  // const irAinicio = () => {
+  //   navigate("/");
+  // };
   return (
     <>
       <div
@@ -55,12 +67,12 @@ const ElHeader = () => {
             </li>
             <li onClick={(e) => menuClick(e.currentTarget)}>
               <a>
-                <span>Nosotros</span>
+                <span>Menu</span>
               </a>
             </li>
             <li onClick={(e) => menuClick(e.currentTarget)}>
               <a>
-                <span>Menu</span>
+                <span>Carrito</span>
               </a>
             </li>
           </ul>
