@@ -7,6 +7,8 @@ import ElFooter from "./components/footer/ElFooter";
 import Inicio from "./pages/inicio";
 import ProductPage from "./pages/ProductPage";
 import Prueba from "./components/prueba/prueba";
+import MenuPage from "./pages/MenuPage";
+import CartPage from "./pages/CartPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +23,9 @@ root.render(
       />
       {/* <Prueba /> */}
       {/* <Inicio /> */}
-      <ProductPage />
+      {/* <ProductPage /> */}
+      {/* <MenuPage /> */}
+      <CartPage />
     </Layout>
   </React.StrictMode>
 );

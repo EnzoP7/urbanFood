@@ -136,89 +136,9 @@ const ProductPage = () => {
               </h3>
             </div>
 
-            {/* //! TABS */}
-            <div role="tablist" className="tabs tabs-bordered pt-10">
-              <input
-                type="radio"
-                name="my_tabs_1"
-                role="tab"
-                className="tab text-2xl"
-                aria-label="Descripción"
-              />
-              <div role="tabpanel" className="tab-content p-10">
-                Dicta sunt explicabo. Nemo enim ipsam voluptatem voluptas sit
-                odit aut fugit, sed quia consequuntur. Lorem ipsum dolor. Aquia
-                sit amet, elitr, sed diam nonum eirmod tempor invidunt labore et
-                dolore magna aliquyam.erat, sed diam voluptua. At vero accusam
-                et justo duo dolores et ea rebum. Stet clitain vidunt ut labore
-                eirmod tempor invidunt magna aliquyam.
-              </div>
-
-              <input
-                type="radio"
-                name="my_tabs_1"
-                role="tab"
-                className="tab text-2xl"
-                aria-label="Reviews"
-                checked
-              />
-              <div role="tabpanel" className="tab-content p-10">
-                <div>
-                  <h3 className="text-3xl mb-5">Review For Black Burger</h3>
-                  <div className="flex justify-start items-center">
-                    <div className="avatar">
-                      <div className="w-28 rounded">
-                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                      </div>
-                    </div>
-                    <div className="mx-5">
-                      <h3 className="font-light text-xl">
-                        Melisa Perez{" "}
-                        <span className="font-light text-sm ">
-                          -Enero 17,2024
-                        </span>
-                        <p className="text-sm font-serif">
-                          Stet clitain vidunt ut labore eirmod tempor invidunt
-                          magna aliquyam.
-                        </p>
-                        <div className="rating pt-1">
-                          <input
-                            type="radio"
-                            name="rating-1"
-                            className="mask mask-star w-4  bg-rojoanaranjado"
-                          />
-                          <input
-                            type="radio"
-                            name="rating-1"
-                            className="mask mask-star w-4 bg-rojoanaranjado"
-                          />
-                          <input
-                            type="radio"
-                            name="rating-1"
-                            className="mask mask-star w-4 bg-rojoanaranjado"
-                          />
-                          <input
-                            type="radio"
-                            name="rating-1"
-                            className="mask mask-star w-4 bg-rojoanaranjado"
-                          />
-                          <input
-                            type="radio"
-                            name="rating-1"
-                            className="mask mask-star w-4 bg-rojoanaranjado"
-                            checked
-                          />
-                        </div>
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* //! Productos RELACIONADOS */}
 
-            <div className="flex flex-col pb-10">
+            <div className="flex flex-col py-10">
               <h3 className="text-3xl">Productos Relacionados</h3>
 
               {prodcutosRelacionados.map((producto) => (
