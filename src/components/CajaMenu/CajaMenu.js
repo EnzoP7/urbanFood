@@ -8,7 +8,7 @@ const CajaMenu = ({ producto }) => {
       className="flex flex-col items-center justify-center cursor-pointer  "
     >
       <div className="relative group">
-        <Cajita />
+        <Cajita producto={producto} />
         <img src={producto.imagen} className="sm:w-96" alt="producto" />
       </div>
 

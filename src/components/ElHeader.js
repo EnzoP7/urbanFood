@@ -2,6 +2,8 @@ import React from "react";
 import { BsBag } from "react-icons/bs";
 import { BsList } from "react-icons/bs";
 import headerImage from "../assests/fondos/paraheader.png";
+import { useCartStore } from "../store/Store.ts";
+
 // import { useNavigation } from "react-router-dom";
 
 const menuClick = (target) => {
@@ -42,6 +44,15 @@ const ElHeader = () => {
   // const irAinicio = () => {
   //   navigate("/");
   // };
+
+  const ItemsEnCarrito = useCartStore((state) =>
+    state.cantidadItemsEnCarrito()
+  );
+  console.log({ ItemsEnCarrito });
+
+  // const verCarrito = useCartStore((state) => state.verCarrito);
+  // console.log("EL CARRITO", verCarrito);
+
   return (
     <>
       <div
@@ -81,7 +92,7 @@ const ElHeader = () => {
           <div className="relative">
             <BsBag size={40} />
             <div className="absolute top-5 left-6 px-2 bg-red-500 text-white rounded-full ">
-              3
+              {ItemsEnCarrito}
             </div>
           </div>
           <div className="relative ml-5 lg:hidden flex">
