@@ -14,10 +14,12 @@ interface Product {
     price: number;
     type: string[];
     image: string;
+    
 }
 
 interface ProductStore {
     products: Product[];
+    obtenerProductos: () => Product[];
 }
 
 interface CartItem {
@@ -33,11 +35,12 @@ interface CartStore {
     addItemToCart: (item: CartItem) => void;
     removeItemFromCart: (itemId: number) => void;
     clearCart: () => void;
-    verCarrito: () => void;
+    verCarrito: () => CartItem[];
     cantidadItemsEnCarrito: () => number;
+
 }
 
-const useProductStore = create<ProductStore>((set) => ({
+const useProductStore = create<ProductStore>((set,get) => ({
     products: [
         {
             id: 1,
@@ -89,6 +92,10 @@ const useProductStore = create<ProductStore>((set) => ({
             image: hotDog,
         },
     ],
+    obtenerProductos:() =>{
+        const {products} = get();
+        return products;
+    }
 }));
 
 const useCartStore = create<CartStore>((set, get) => ({
@@ -99,12 +106,13 @@ const useCartStore = create<CartStore>((set, get) => ({
     clearCart: () => set({ cart: [] }),
     verCarrito: () => {
         const { cart } = get();
-        return console.log(cart);
+        return cart
     },
     cantidadItemsEnCarrito: () => {
         const { cart } = get();
         return cart.length;
     },
+  
 }));
 
 export { useProductStore, useCartStore };

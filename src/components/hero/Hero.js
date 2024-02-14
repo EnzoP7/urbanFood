@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import foto1 from "../../assests/heroburgers/product1.png";
 import foto2 from "../../assests/heroburgers/product2.png";
 import foto4 from "../../assests/heroburgers/product4.png";
 import foto3 from "../../assests/heroburgers/product3.png";
 import { FaArrowRight } from "react-icons/fa6";
 import Cajita from "../cajita/Cajita";
+import { useCartStore, useProductStore } from "../../store/Store.ts";
+import { ToastContainer, toast, Slide } from "react-toastify";
 
 const Hero = () => {
+  const losProductos = useProductStore((state) => state.obtenerProductos);
+  const ProductosExistentes = losProductos();
+  const cuatroProductos = ProductosExistentes.slice(0, 4);
+  console.log(losProductos());
+
+  // const encontrarProducto = (id) => {
+  //   const Producto = ProductosExistentes.filter((pro) => pro.id === id);
+  //   return Producto[0];
+  // };
+
   const burgers = [
     { id: 1, foto: foto1, nombre: "Chicken Burger", precio: "$370" },
     { id: 2, foto: foto2, nombre: "Black Burger", precio: "$370" },
@@ -38,7 +50,7 @@ const Hero = () => {
                 alt="jijija"
                 className="px-4"
               />
-              <Cajita />
+              <Cajita producto={burger} />
               <div className="flex justify-center items-center">
                 <p className="text-xl">{burger.nombre}</p>
               </div>
